@@ -1,0 +1,186 @@
+@font-face{
+    font-family: "Larsseit";
+    src: url("../fonts/Larsseit-Bold.woff2") format("woff2"), url("../fonts/Larsseit-Bold.woff") format("woff");
+    font-display: swap;
+    font-weight: 700;
+    font-style: normal;
+ }
+.wrapper{
+	overflow: hidden;
+	min-height: 100%;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+}
+.wrapper > main{
+	flex-grow: 1;
+}
+.header__container{
+    max-width: 1438px;
+    font-family: Larsseit;
+    padding: 20px;
+}
+.header__row{
+    display: flex;
+    padding-bottom: 20px;
+}
+.row__text{
+    font-size: 32px;
+    line-height: 34px;
+    letter-spacing: -0.006em;
+    color: #FFFFFF;
+    flex-basis: 360px;
+    min-height: 360px;
+    padding-left: 78px;
+    padding-top: 95px;
+    position: relative;
+}
+.row__text:nth-child(1){
+    background: #FFE2DE;
+}
+.row__text:nth-child(2){
+    background: #C4E769;
+}
+.row__text:nth-child(3){
+    background: #62D0DF;
+}
+.row__text:nth-child(4){
+    background: #0052C1;
+}
+.row__text::before{
+    content:"";
+	flex: 0 0 9px;
+	width: 9px;
+	height: 9px;
+	background-color:  #E9B730;
+    display: inline-flex;
+    border-radius: 50%;
+    position: relative;
+	right: 15px;
+	bottom: 11px;
+}
+.row__text::after{
+    content:"";
+    flex: 0 0 1px;
+	width: 255px;
+	height: 1px;
+    background-color: #FFFFFF;
+    display: inline-flex;
+    position: absolute;
+    top: 72px;
+    left: 52.5px;
+}
+.flexbox__container{
+    padding: 20px;
+}
+.flexbox__block{
+    border: 5px solid black;
+    background-color: darkslategrey;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 15px;
+}
+.block__text{
+    font-weight: 900;
+    font-size: 20px;
+    color: aliceblue;
+    border: 2px solid blue;
+    padding: 20px;
+    background-color: darkorchid;
+}
+.block__text:nth-child(1){
+    order: 3;
+}
+.block__text:nth-child(2){
+    order: 1;
+}
+.block__text:nth-child(3){
+    order: 4;
+}
+.block__text:nth-child(4){
+    order: 2;
+}
+.flexbox__butt{
+    border: 5px solid black;
+    background-color: darkslategrey;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column-reverse;
+    margin-bottom: 15px;
+}
+.butt__text{
+    font-weight: 900;
+    font-size: 20px;
+    color: aliceblue;
+    border: 2px solid blue;
+    padding: 20px;
+    background-color: darkorchid;
+}
+.flexbox__lesson{
+    border: 5px solid black;
+    background-color: darkslategrey;
+    display: flex;
+    column-gap: 50px;
+    flex-wrap: wrap-reverse;
+    margin-bottom: 15px;
+}
+.lesson__text{
+    font-weight: 900;
+    font-size: 20px;
+    color: aliceblue;
+    border: 2px solid blue;
+    padding: 20px;
+    flex: 0 1 300px; 
+    background-color: darkorchid;
+}
+.footer{
+    padding-bottom: 20px;
+}
+.footer__container{
+    display: flex;
+}
+.footer__column{
+    flex: 1 0 33.333%;
+    padding-left: 20px;
+}
+.footer__flexbox{
+    min-height: 100%;
+    max-width: 500px;
+    max-height: 500px;
+    background-color: #504949;
+    padding: 20px;
+}
+.flexbox-footer{
+    display: flex;
+	flex-direction: column;
+	gap: 10px;
+	align-items: flex-start;
+}
+.flexbox-footer__img img{
+    max-width: 100%;
+}
+.flexbox-footer__text{
+    flex-grow: 1;
+}
+.flexbox-footer__button{
+    color: blue;
+}
+.aside{
+    padding: 40px;
+}
+.aside__container{
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    max-height: 600px;
+}
+.aside__image{
+    max-width: 100%;
+    max-width: 200px;
+    max-height: 200px;
+    float: left;
+    padding-bottom: 20px;
+    padding-right: 20px;
+}
+
+ 
